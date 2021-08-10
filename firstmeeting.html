@@ -87,50 +87,30 @@
         <p>Natural Language Interface (NLIs) is useful in visual data analysis, and Natural language interfaces for visualization are becoming popular in both academic research and commercial software. 
           However, just like the miscommunication between human beings, the Ambiguity of natural language make the implemention of NLIs for data visualization becomes more challenging. 
           For developers, especially visualization developers without experience in natural language processing technology, they need to spend much time to learning and implementing different NLP techniques.</p>
-        <hr>
+        
         <p>In this paper, the author present NL4DV, a python package for data visualization driven by natural language. 
           It takes a tabular dataset and a natural language query about the dataset as input, and it returns an analytic specification modeled as a JSON object containing data attributes, analytic tasks, and a list of Vega-Lite specifications relevant to the input query. 
           It could help visualization developers who may not have NLP background to create new visualization NLIs or incorporate natural language input into existing systems.</p>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Example lists</h3>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+        
+        <p>The Design Goals of NL4DV is:</p>
         <ul>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
+          <li>DG1. Minimize NLP learning curve.</li>
+          <li>DG2. Generate modularized output and support integration with existing system components.</li>
+          <li>DG3. Highlight inference type and ambiguity.</li>
+          <li>DG4. Support adding aliases and overriding toolkit defaults.</li>
         </ul>
-        <p>And this is an ordered list:</p>
-        <ol>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
-        </ol>
-        <p>And this is a definiton list:</p>
-        <dl>
-          <dt>HyperText Markup Language (HTML)</dt>
-          <dd>The language used to describe and define the content of a Web page</dd>
-          <dt>Cascading Style Sheets (CSS)</dt>
-          <dd>Used to describe the appearance of Web content</dd>
-          <dt>JavaScript (JS)</dt>
-          <dd>The programming language used to build advanced Web sites and applications</dd>
-        </dl>
-        <h2>Inline HTML elements</h2>
-        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <img src="NL4DV_fig2.jpg" alt="fig.2 of NL4DV" width="800">
+        <img src="NL4DV_lis1.jpg" alt="listing.1 of NL4DV" width="800">
+        <p>The dataset will be initialized with the attribute types: Quantitative, Nominal, Ordinal and Temporal. If there are some errors, developers can change the types by using other helper functions</p>
+        
+        <p>The main part of the NL4DV is Query Interpretation, which include:</p>
         <ul>
-          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-          <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+          <li>Query Parsing.</li>
+          <li>Attribute Inference.</li>
+          <li>Task Inference.</li>
+          <li>Visualization Generation.</li>
         </ul>
-        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-        <h2>Heading</h2>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <h3>Sub-heading</h3>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <pre><code>Example code block</code></pre>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+        
       </article>
 
       <article class="blog-post">
