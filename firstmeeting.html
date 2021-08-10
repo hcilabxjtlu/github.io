@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.87.0">
-    <title>Blog Template · Bootstrap v5.1</title>
+    <title>First Group Meeting</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
 
@@ -65,7 +65,6 @@
       <a class="p-2 link-secondary" href="#">Members</a>
       <a class="p-2 link-secondary" href="#">Contact Us</a>
     </nav>
-    <hr>
   </div>
 </div>
 
@@ -89,7 +88,7 @@
           However, just like the miscommunication between human beings, the Ambiguity of natural language make the implemention of NLIs for data visualization becomes more challenging. 
           For developers, especially visualization developers without experience in natural language processing technology, they need to spend much time to learning and implementing different NLP techniques.</p>
         
-        <p>In this paper, the author present NL4DV, a python package for data visualization driven by natural language. 
+        <p>In this paper, the authors present NL4DV, a python package for data visualization driven by natural language. 
           It takes a tabular dataset and a natural language query about the dataset as input, and it returns an analytic specification modeled as a JSON object containing data attributes, analytic tasks, and a list of Vega-Lite specifications relevant to the input query. 
           It could help visualization developers who may not have NLP background to create new visualization NLIs or incorporate natural language input into existing systems.</p>
         
@@ -102,7 +101,7 @@
         </ul>
         <img src="NL4DV_fig2.jpg" alt="fig.2 of NL4DV" width="400">
         <img src="NL4DV_lis1.jpg" alt="listing.1 of NL4DV" width="400">
-        <p>
+        <p></p>
         <p>The dataset will be initialized with the attribute types: Quantitative, Nominal, Ordinal and Temporal. If there are some errors, developers can change the types by using other helper functions</p>
         
         <p>The main part of the NL4DV is Query Interpretation, which include:</p>
@@ -113,6 +112,10 @@
           <li>Visualization Generation.</li>
         </ul>
         <img src="NL4DV_fig5.jpg" alt="fig.5 of NL4DV" width="800">
+        <p></p>
+        <p>NL4DV currently does not support follow-up queries, they plan to add it with additional dialog parameter. 
+          Moreover, they try to improve query interpretation and enable additional query types, such as question answering. 
+          They also want to provide the option for developers to replace NL4DV’s heuristic modules with contemporary ML models/techniques in the future.</p>
       </article>
 
     </div>
