@@ -16,6 +16,17 @@
 <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .gradient-custom {
+  	/* fallback for old browsers */
+  	background: #6a11cb;
+
+  	/* Chrome 10-25, Safari 5.1-6 */
+  	background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+	  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+      }
+	    
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -69,7 +80,7 @@
 </div>
 
 <main class="container">
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+  <div class="p-4 p-md-5 mb-4 text-white rounded gradient-custom">
     <div class="col-md-6 px-0">
       <h1 class="display-4 fst-italic">Welcome to HCI Lab of XJTLU!</h1>
       <p class="lead my-3">Some introduction should be here.</p>
@@ -96,7 +107,8 @@
               <strong class="d-inline-block mb-2 text-primary">Group Meeting Summery</strong>
               <h3 class="mb-0">Vis Paper Study 1st</h3>
               <div class="mb-1 text-muted">AUG 6</div>
-              <p class="card-text mb-auto">The paper studied in meeting is NL4DV: A Toolkit for Generating Analytic Specifications for Data Visualization from Natural Language Queries.</p>
+              <p class="card-text mb-auto">The paper studied in meeting is 
+		      <em>NL4DV: A Toolkit for Generating Analytic Specifications for Data Visualization from Natural Language Queries</em>.</p>
               <img src="images/NL4DV_fig1.jpg" alt="fig.1 of NL4DV">
               <a href="https://hcilabxjtlu.github.io/homepage/firstmeeting.html" class="stretched-link">Continue reading</a>
             </div>
