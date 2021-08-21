@@ -12,7 +12,7 @@ document.writeln('          <ol class="list-unstyled mb-0">');
 document.writeln('            <li><a href="#">Visualization</a></li>');  
 document.writeln('            <li><a href="#">AR/VR</a></li>');  
 document.writeln('            <li><a href="#">Storytelling</a></li>');  
-document.writeln('            <li><a href="#">Mechine Learning</a></li>');  
+document.writeln('            <li><a href="#">Machine Learning</a></li>');  
 document.writeln('          </ol>');  
 document.writeln('        </div>');  
 document.writeln('        <div class="p-4">');  
