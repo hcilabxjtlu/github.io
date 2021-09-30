@@ -4,7 +4,7 @@ document.writeln('      <div class="col-4 pt-1">');
 document.writeln('        <a class="link-secondary" href="#"></a>');  
 document.writeln('      </div>');  
 document.writeln('      <div class="col-4 text-center">');  
-document.writeln('        <a class="blog-header-logo text-dark" href="#">VISHCI LAB</a>');  
+document.writeln('        <a class="blog-header-logo text-dark" href="#">xrVis</a>');  
 document.writeln('      </div>');  
 document.writeln('      <div class="col-4 d-flex justify-content-end align-items-center">');  
 document.writeln('        <a class="link-secondary" href="#" aria-label="Search">');  
