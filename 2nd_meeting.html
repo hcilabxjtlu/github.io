@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>First Group Meeting</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+<body>
+    
+<div class="container">
+  <script src='js/head.js' type="text/javascript"></script>
+</div>
+
+<main class="container">
+  
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Vis Paper Study
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Study of UrbanRama</h2>
+        <p class="blog-post-meta">September 17, 2021 by <a href="#">Lixiang Zhao</a></p>
+
+        <img src="images/UrbanRama_fig1.jpg" alt="fig.1 of UrbanRama" width="100%">
+        <hr>
+        <p>VR navigation in the virtual city is always difficult. Because of the shelter from the buildings surrounding, 
+		the user is unable to identify their own location and the target location without any annotations in a local view. 
+		Spatial perception will be lost totally. The best way to help navigation is the global view. However, 
+		in the traditional methods, the user can only focus from one perspective at one time, which leads to attraction distraction. </p>
+		
+		<p>This paper introduces a new intuitive navigation interface called “UrbanRama” to realize “Focus +Context” mode providing a mix of both the local and global view simultaneously. 
+		It warps the environment based on the cylindrical projection. The author conducted qualitative and quantitative user studies and concluded that the new method can deliver a perfect spatial perception in navigation. 
+		And the warp of the environment will not affect the distance and the orientation perception.</p>
+        
+        <p>The desired properties of the system are:</p>
+        <ul>
+          <li>R1. Provide a local as well global perspective during the exploration process. This allows users to preserve context without having to constantly switch between different perspectives.</li>
+          <li>R2. Ability to quickly locate and move to building locations/points of interest.</li>
+          <li>R3. Have a small number of controls. This is especially important to not overwhelm users, who, while willing to embrace technology, are not power users.</li>
+        </ul>
+		<p>The projected coordinate (x; y; z) of a point (X; Y; 0) on the plane on this cylinder is computed as:</p>
+        <img src="images/UrbanRama_fig4.jpg" alt="fig.4 of UrbanRama" width="60%">
+		
+		<p>The system uses Oculus Rift as the VR headset. UrbanRama only uses one handler. 
+		The function of the handler of three developed versions are shown as follows. 
+		The final version enables the user to change altitude, move forward, fly up, and change the viewer mode (flat or Rama mode).</p>
+        <img src="images/UrbanRama_table2.jpg" alt="table.2 of UrbanRama" width="100%">
+        <p></p>
+        <p>The author’s group did both qualitative and quantitative user studies. 
+		In the qualitative user study, they placed the users who are working and living in New York city to a random place in Virtual New York city and ask them to identify the street and the block. And in the quantitative user study, users were required to navigate to the landmark, search the provided target, comparing the distance and the orientation perception under the tow modes (flat and Rama mode). They concluded that the “Focus + Context” view provided by Rama mode combining local and global perspectives shows a great effectiveness in spatial perception and VR navigation. 
+		And the warps of the virtual city environment do not affect the distance and the orientation perception.</p>
+        <img src="images/UrbanRama_fig6.jpg" alt="fig.6 of UrbanRama" width="100%">
+        <img src="images/UrbanRama_fig9.jpg" alt="fig.9 of UrbanRama" width="100%">
+        <p></p>
+        <p><strong>Chen, S., Miranda, F., Ferreira, N., Lage, M., Doraiswamy, H., Brenner, C., Defanti, C., Koutsoubis, M., Wilson, L., Perlin, K., & Silva, C. T. (2021). 
+          <em>UrbanRama: Navigating Cities in Virtual Reality</em>. 
+          IEEE Transactions on Visualization and Computer Graphics.</strong> 
+        <a href="https://doi.org/10.1109/TVCG.2021.3099012">https://doi.org/10.1109/TVCG.2021.3099012</a> </p>
+      </article>
+
+    </div>
+    <script src='js/side.js' type="text/javascript"></script>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+    
+  </body>
+</html>
