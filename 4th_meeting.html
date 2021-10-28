@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>4th Group Meeting</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+<body>
+    
+<div class="container">
+  <script src='js/head.js' type="text/javascript"></script>
+</div>
+
+<main class="container">
+  
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Vis Paper Study
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Study of Paper Forager</h2>
+        <p class="blog-post-meta">October 15, 2021 by <a href="#">Zhichao Zhang</a></p>
+
+        <img src="images/PaperForager_fig1.jpg" alt="fig.1 of PaperForager" width="100%">
+        <hr>
+        <p>The process of literature review can be composed of three main stages: </p>
+		
+		<p><strong>Finding</strong>: filtering the collection of all possible papers down to those you might want to read, either by browsing the collection, or explicitly searching. 
+		</p>
+        <p><strong>Scanning</strong>: making a decision for each individual paper as to whether it is worthwhile to read based on the available information scent cues. 
+		</p>
+		<p><strong>Reading</strong>: looking through the content of the paper for useful information. 
+		</p>
+		
+        <p>In order to maintain flow during the literature review process, it is desirable for the transitions between the stages to be as smooth as possible. 
+		</p>
+		
+        <img src="images/PaperForager_fig2.jpg" alt="fig.2 of PaperForager" width="60%">
+		<p>With physical proceedings and digital library, there are not well connected through the whole stage of literature review. This paper designed Paper Forager to combine all of the phases together. 
+		</p>
+		<p>Along the top of the window are the interface controls for refining the displayed collection of papers which includes the <em>search field, histogram filters, author list, history bar, and saved paper controls. </em>
+		</p>
+        <img src="images/PaperForager_fig3.jpg" alt="fig.3 of PaperForager" width="100%">
+		
+		<p><strong>Search field</strong> initializes keyword searches of the titles and abstracts of the papers, as well as searches for authors and conference titles. The search system will automatically recognize author and conference names. By default, entering a term in the search field will perform a new query using the entire collection as input, but prefacing a search term with a plus sign (+) creates an additive search filter. 
+		</p>
+		
+		<p><strong>Histogram Filters</strong> display the number of papers published in each year and the relative distribution of the number of citations each paper has received. Users can click the Year and Citations headings to set the sorting order of the papers in the main display area.
+		</p>
+        <p><strong>Author list</strong> is a list of the top authors of the papers within the current search results.</p>
+        <p><strong>history bar</strong> is designed for keeping a history of actions during information foraging and provides a way for users to see how they arrived at their current view and the ability to easily backtrack if desired. Each type of search event has its own history token icon. As the list of tokens grows longer, the previous ones are minimized to show only their icon and their full description is displayed in a tooltip. 
+		</p>
+		<img src="images/PaperForager_fig4.jpg" alt="fig.4 of PaperForager" width="60%">
+        <p><strong>Saved paper controls</strong> provide the access to the collection of the user’s saved papers, as well as all papers saved by the user community.
+		</p>
+        <p></p>
+        <p>The main display area offers a <em>collection view, a paper view, and a page view.</em> </p>
+        <p>The <strong>collection view</strong> is used to display all papers that match the current query and filters. </p>
+		<img src="images/PaperForager_fig5.jpg" alt="fig.5 of PaperForager" width="60%">
+        <p>In <strong>paper view</strong>, the composite image of the paper is fit to the main canvas area, with additional metadata including the title, abstract, authors, venue, and year displayed on the right. 
+		</p>
+		<img src="images/PaperForager_fig6.jpg" alt="fig.6 of PaperForager" width="60%">
+        <p>In <strong>page view</strong>, the navigational controls and arrow keys change to support navigation between the pages of the document. </p>
+
+        <p>The original PDF versions of the papers go through a multi-stage processing pipeline to convert them into their multi-scale image pyramid format. Combined with preloading technology, the image can be immediately displayed when requested.
+		</p>
+		<img src="images/PaperForager_fig7.jpg" alt="fig.7 of PaperForager" width="60%">
+        <p>Initial user feedback (6 participants) and public deployments (153 users) all provide a very positive feedback after using the system and many users expressed interest in continue using the system after the study deployment is over. 
+		</p>
+		<img src="images/PaperForager_fig8.jpg" alt="fig.8 of PaperForager" width="60%">
+        <p></p>
+		<img src="images/PaperForager_fig9.jpg" alt="fig.9 of PaperForager" width="60%">
+        <p></p>
+        <p><strong>Matejka, J., Grossman, T., & Fitzmaurice, G. (2021).  
+          <em>Paper forager: Supporting the rapid exploration of research document collections</em>. 
+          Proceedings - Graphics Interface, 2021-May.</strong> 
+        <a href="https://doi.org/10.20380/GI2021.27">https://doi.org/10.20380/GI2021.27</a> </p>
+      </article>
+
+    </div>
+    <script src='js/side.js' type="text/javascript"></script>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+    
+  </body>
+</html>
